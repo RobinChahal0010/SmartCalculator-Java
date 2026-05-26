@@ -18,7 +18,7 @@ public class ExpressionEvaluator {
         List<Token> tokens = new ArrayList<>();
         StringBuilder number = new StringBuilder();
         
-        String cleaned = expr.replaceAll("\\s+", ""); // remove spaces
+        String cleaned = expr.replaceAll("\\s+", ""); 
         
         for (int i = 0; i < cleaned.length(); i++) {
             char c = cleaned.charAt(i);
