@@ -48,7 +48,7 @@ public class ExpressionEvaluator {
                 tokens.add(new Token(String.valueOf(c), Token.TokenType.OPERATOR));
             } 
             else if (Character.isLetter(c)) {
-                // Handle functions like sin, cos, sqrt, fact
+                // Handle functions like sin, cos, sqrt
                 StringBuilder func = new StringBuilder();
                 while (i < cleaned.length() && Character.isLetter(cleaned.charAt(i))) {
                     func.append(cleaned.charAt(i));
